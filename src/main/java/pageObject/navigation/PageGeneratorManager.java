@@ -2,6 +2,10 @@ package pageObject.navigation;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObject.admin.AdminAllReviewsPageObject;
+import pageObject.admin.AdminLoginPageObject;
+import pageObject.admin.AdminManageCustomerPageObject;
+import pageObject.admin.AdminOrdersPageObject;
 import pageObject.user.AboutUsPageObject;
 import pageObject.user.AccountInformationPageObject;
 import pageObject.user.AddressBookPageObject;
@@ -32,14 +36,6 @@ public class PageGeneratorManager {
 	public static UserLoginPageObject getUserLoginPage(WebDriver driver) {
 		return new UserLoginPageObject(driver);
 	}
-//
-//	public static AdminManageCustomerPageObject getAdminManageCustomerPage(WebDriver driver) {
-//		return new AdminManageCustomerPageObject(driver);
-//	}
-//
-//	public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
-//		return new AdminLoginPageObject(driver);
-//	}
 
 	public static MyDashboardPageObject getMyDashboradPage(WebDriver driver) {
 		return new MyDashboardPageObject(driver);
@@ -115,4 +111,18 @@ public class PageGeneratorManager {
 	public static CreateAnAccountPageObject getCreateAnAccountPage(WebDriver driver) {
 		return new CreateAnAccountPageObject(driver);
 	}
-}
+	public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
+		return new AdminLoginPageObject(driver);
+	}
+	//
+	public static AdminManageCustomerPageObject getAdminManageCustomerPage(WebDriver driver) {
+		return new AdminManageCustomerPageObject(driver);
+	}
+	public static AdminOrdersPageObject getAdminSalesOrderPage(WebDriver driver) {
+		return new AdminOrdersPageObject(driver);
+	}
+	public static AdminAllReviewsPageObject getAdminAllReviewsPage(WebDriver driver) {
+		return new AdminAllReviewsPageObject(driver);
+	}
+	
+	}

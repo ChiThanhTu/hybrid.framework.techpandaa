@@ -214,7 +214,7 @@ public class BaseTest {
 			envUrl = "http://live.techpanda.org/index.php/";
 
 		} else if (enviroment == EnviromentList.ADMIN) {
-			envUrl = "https://admin-demo.nopcommerce.com/login?ReturnUrl=/admin/";
+			envUrl = "http://live.techpanda.org/index.php/backendlogin";
 		}
 		System.out.println(envUrl);
 		return envUrl;

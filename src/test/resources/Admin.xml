@@ -8,10 +8,8 @@
 <listener class-name="reportConfig.ExtentTestListener"></listener>
 </listeners>
   <test name="Run on chrome browser">
-  <parameter name="browser" value="chrome"></parameter>
-  <parameter name="userUrl" value="http://live.techpanda.org/index.php/"/>
     <classes>
-      <class name="com.techpanda.account.LoginUser"/>
+      <class name="com.techpanda.admin.Admin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

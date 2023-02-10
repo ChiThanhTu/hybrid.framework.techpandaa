@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="reportConfig.ReportNGListener"/>
+    <listener class-name="reportConfig.ExtentTestListener"/>
+  </listeners>
+  <test thread-count="5" name="Run on chrome browser(failed)">
+    <classes>
+      <class name="com.techpanda.admin.Admin">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_04_Search_With_Emty_All_Of_Customer" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.techpanda.admin.Admin -->
+    </classes>
+  </test> <!-- Run on chrome browser(failed) -->
+</suite> <!-- Failed suite [Suite] -->

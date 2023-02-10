@@ -1,6 +1,7 @@
 package commons;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -46,6 +47,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 //import pageUI.user.MyProductReviewPageUI;
 
 import pageObject.navigation.FooterContainerPageObject;
+import pageObject.navigation.HeaderContainerPageObject;
 import pageObject.navigation.SideBarMyAccountPageObject;
 
 public class BasePage {
@@ -325,7 +327,22 @@ public class BasePage {
 	}
 
 	public boolean isElementDisPlayedInDom(WebDriver driver, String locator) {
+		hightLightElement(driver, locator);
 		return getWebElement(driver, locator).isDisplayed();
+	}
+	public boolean isListElementDisPlayedInDom(WebDriver driver, String locator) {
+		hightLightElement(driver, locator);
+		List<WebElement> elements = getListWebElement(driver, locator);
+		if(((WebElement) elements).isDisplayed())
+		{
+			System.out.println("Element in DOM");
+			return true;
+		}
+		else {
+			return false;
+		}
+		
+		
 	}
 
 	public boolean isElementDisPlayedInDom(WebDriver driver, String locator, String... dymanicLocator) {
@@ -501,6 +518,11 @@ public class BasePage {
 				.until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locator)));
 
 	}
+	public void waitForElementsVisible(WebDriver driver, String locator) {
+		new WebDriverWait(driver, longTimeout)
+				.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByLocator(locator)));
+
+	}
 
 	public void waitForElementVisible(WebDriver driver, String locator, String... dymanicLocator) {
 		new WebDriverWait(driver, longTimeout).until(ExpectedConditions
@@ -557,6 +579,10 @@ public class BasePage {
 //
 	public FooterContainerPageObject getFooterContainerPage(WebDriver driver) {
 		return new FooterContainerPageObject(driver);
+
+	}
+	public HeaderContainerPageObject getHeaderContainerPage(WebDriver driver) {
+		return new HeaderContainerPageObject(driver);
 
 	}
 
