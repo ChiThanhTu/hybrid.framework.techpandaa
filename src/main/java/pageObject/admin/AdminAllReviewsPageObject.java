@@ -34,4 +34,9 @@ public class AdminAllReviewsPageObject  extends BasePage {
 		return getElelementText(driver, AdminAllReviewsPageUI.DYNAMIC_CEEL_BY_HEADER_INDEX_AND_ROW_INDEX, rowNumber,
 				String.valueOf(headerIndex)).trim();
 	}
+
+	public boolean isCustomerInforDislayed() {
+		waitForElementsVisible(driver, AdminAllReviewsPageUI.ALL_REVIEWS_INFOR_DISPLAYED);
+		return isListElementDisPlayedInDom(driver, AdminAllReviewsPageUI.ALL_REVIEWS_INFOR_DISPLAYED);
+	}
 }

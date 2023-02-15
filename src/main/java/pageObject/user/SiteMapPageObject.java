@@ -50,6 +50,7 @@ public class SiteMapPageObject extends BasePage{
 	public void checkOut() {
 		waitForElementClickable(driver, SiteMapPageUI.CONTINUE_BILLING_INFORMATION_BUTTON);
 		clickToElement(driver, SiteMapPageUI.CONTINUE_BILLING_INFORMATION_BUTTON);
+		checkToCheckboxOrRadio(driver, SiteMapPageUI.SHIP_TO_THIS_ADDRESS);
 		waitForElementClickable(driver, SiteMapPageUI.CONTINUE_SHIPPING_METHOD_BUTTON);
 		clickToElement(driver, SiteMapPageUI.CONTINUE_SHIPPING_METHOD_BUTTON);
 		waitForElementClickable(driver, SiteMapPageUI.MONEY_ORDER_RADIO);

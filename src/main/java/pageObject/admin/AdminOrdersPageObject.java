@@ -33,4 +33,9 @@ public class AdminOrdersPageObject extends BasePage {
 		waitForElementVisible(driver, AdminSalesOrderPageUI.NO_RECORDS_FOUND_MESSAGE);
 		return getElelementText(driver, AdminSalesOrderPageUI.NO_RECORDS_FOUND_MESSAGE);
 	}
+
+	public boolean isCustomerInforDislayed() {
+		waitForElementsVisible(driver, AdminSalesOrderPageUI.ORDER_INFOR_DISPLAYED);
+		return isListElementDisPlayedInDom(driver, AdminSalesOrderPageUI.ORDER_INFOR_DISPLAYED);
+	}
 }

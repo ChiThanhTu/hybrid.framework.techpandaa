@@ -13,7 +13,7 @@ public class UserLoginPageObject extends BasePage{
 		this.driver=driver;
 	}
 	@Step("enter email adddress textbox {0}")
-	public void inputToElementAddressTextbox(String email) {
+	public void inputToEmailAddressTextbox(String email) {
 		waitForElementVisible(driver, UserLoginPageUI.EMAIL_ADDRESS_TEXTBOX);
 		sendkeyToElement(driver, UserLoginPageUI.EMAIL_ADDRESS_TEXTBOX, email);
 	}

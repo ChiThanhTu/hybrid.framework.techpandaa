@@ -327,18 +327,22 @@ public class BasePage {
 	}
 
 	public boolean isElementDisPlayedInDom(WebDriver driver, String locator) {
-		hightLightElement(driver, locator);
+	
 		return getWebElement(driver, locator).isDisplayed();
 	}
 	public boolean isListElementDisPlayedInDom(WebDriver driver, String locator) {
-		hightLightElement(driver, locator);
+	
 		List<WebElement> elements = getListWebElement(driver, locator);
-		if(((WebElement) elements).isDisplayed())
+		if(elements.size() >0)
 		{
-			System.out.println("Element in DOM");
+			for (WebElement webElement : elements) {
+					webElement.isDisplayed();
+			}
 			return true;
 		}
 		else {
+			System.out.println("ko hien thi");
+
 			return false;
 		}
 		

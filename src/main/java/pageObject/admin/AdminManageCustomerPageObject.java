@@ -30,7 +30,7 @@ public class AdminManageCustomerPageObject extends BasePage {
 		waitForElementVisible(driver, AdminManageCustomerPageUI.DYNAMIC_TEXTBOX_BY_HEADER_NAME, locator1,locator2);
 		sendkeyToElement(driver, AdminManageCustomerPageUI.DYNAMIC_TEXTBOX_BY_HEADER_NAME, text, locator1,locator2);
 		pressKeyToElement(driver, AdminManageCustomerPageUI.DYNAMIC_TEXTBOX_BY_HEADER_NAME, Keys.ENTER, locator1,locator2);
-		sleepInSecond(10);
+		sleepInSecond(4);
 	}
 	public Object getNoRecordsFoundMessage() {
 		waitForElementVisible(driver, AdminManageCustomerPageUI.NO_RECORDS_FOUND_MESSAGE);
