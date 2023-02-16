@@ -48,13 +48,13 @@ private final String reportScreenPath = projectPath + "/ReportNGScreenShots";
 private final String extentPath = projectPath + "/htmlExtentScreenShots";
 private final String allurePath = projectPath + "/htmlAllure";
 
-private final String browserStackUserName = "tuschi_CGaPXQ";
-private final String browserStackAutomateKey = "NtK9PRudRusn9wenJxNF";
-private final String browserStackUrl = "https://" + browserStackUserName + ":" + browserStackAutomateKey + "@hub-cloud.browserstack.com/wd/hub";
-private final String sauceUserName = "oauth-tuemm1976-07d9b";
-private final String sauceAutomateKey = "b4c2bc67-38eb-45a9-b8c4-a2955409d462";
-private final String sauceLabUrl = "https://" + sauceUserName + ":" + sauceAutomateKey + "@ondemand.us-west-1.saucelabs.com:443/wd/hub";
-private final String lambdaUserName = "tuemm1976";
-private final String lambdaAutomateKey = "A7afic11QJNR8dRDIpeKaUFe2FXRqxmZyul6SaHqdNTyIihTAb";
-private final String lambdabUrl = "https://" + lambdaUserName + ":" + lambdaAutomateKey + "@hub.lambdatest.com/wd/hub";
+//private final String browserStackUserName = "tuschi_CGaPXQ";
+//private final String browserStackAutomateKey = "NtK9PRudRusn9wenJxNF";
+//private final String browserStackUrl = "https://" + browserStackUserName + ":" + browserStackAutomateKey + "@hub-cloud.browserstack.com/wd/hub";
+//private final String sauceUserName = "oauth-tuemm1976-07d9b";
+//private final String sauceAutomateKey = "b4c2bc67-38eb-45a9-b8c4-a2955409d462";
+//private final String sauceLabUrl = "https://" + sauceUserName + ":" + sauceAutomateKey + "@ondemand.us-west-1.saucelabs.com:443/wd/hub";
+//private final String lambdaUserName = "tuemm1976";
+//private final String lambdaAutomateKey = "A7afic11QJNR8dRDIpeKaUFe2FXRqxmZyul6SaHqdNTyIihTAb";
+//private final String lambdabUrl = "https://" + lambdaUserName + ":" + lambdaAutomateKey + "@hub.lambdatest.com/wd/hub";
 }
