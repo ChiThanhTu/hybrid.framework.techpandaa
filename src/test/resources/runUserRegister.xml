@@ -9,7 +9,7 @@
 </listeners>
   <test name="Run on chrome browser">
     <classes>
-      <class name="com.techpanda.account.RegisterUser"/>
+      <class name="com.techpanda.user.RegisterUser"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

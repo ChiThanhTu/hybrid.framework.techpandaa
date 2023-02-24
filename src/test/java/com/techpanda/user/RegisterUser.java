@@ -33,7 +33,7 @@ public class RegisterUser extends BaseTest {
 
 	@Parameters({ "envName","serverName","browserName","ipAddress","port","osName","osVersion"})
 	@BeforeClass
-	public void beforeClass(@Optional("local")String envName, @Optional("DEV")String serverName, @Optional("Chrome")String browserName, @Optional("localhost")String ipAddress, @Optional("5555")String port,  @Optional("Windows")String osName, @Optional("10")String osVersion) {
+	public void beforeClass(@Optional("local")String envName, @Optional("USER")String serverName, @Optional("Chrome")String browserName, @Optional("localhost")String ipAddress, @Optional("5555")String port,  @Optional("Windows")String osName, @Optional("10")String osVersion) {
 		driver = getBrowserDriver(envName, serverName, browserName, ipAddress, port, osName, osVersion);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 		firstName = "Tu";
@@ -148,8 +148,8 @@ public class RegisterUser extends BaseTest {
 		ExtentManager.getTest().log(Status.INFO, "TC_04 - Step 04: Input To EmailAddress '" + validEmail + "' Textbox");
 		createAnAccountPage.inputDynamicTextboxById("email_address", existingEmail);
 		ExtentManager.getTest().log(Status.INFO,
-				"TC_03 - Step 05: Input To Password '" + invalidPassword + "' Textbox");
-		createAnAccountPage.inputDynamicTextboxById("password", invalidPassword);
+				"TC_03 - Step 05: Input To Password '" + password + "' Textbox");
+		createAnAccountPage.inputDynamicTextboxById("password", password);
 		ExtentManager.getTest().log(Status.INFO,
 				"TC_03 - Step 06: Input To Confirm Password '" + password + "' Textbox");
 		createAnAccountPage.inputDynamicTextboxById("confirmation", comfirmPassword);
