@@ -55,18 +55,21 @@ public class FooterContainerPageObject extends BasePage {
 		clickToElement(driver, FooterContainerPageUI.SITE_MAP_LINK);
 		return PageGeneratorManager.getSiteMapPage(driver);
 	}
+
 	@Step("Open Advance Search Page")
 	public AdvanceSearchPageObject OpenAdvanceSearchPage() {
 		waitForElementClickable(driver, FooterContainerPageUI.ADVANCED_SEARCH_LINK);
 		clickToElement(driver, FooterContainerPageUI.ADVANCED_SEARCH_LINK);
 		return PageGeneratorManager.getAdvanceSearchPage(driver);
 	}
+
 	@Step("Open Customer Service Page")
 	public CustomerServicePageObject OpenCustomerServicePage() {
 		waitForElementClickable(driver, FooterContainerPageUI.CUSTOMER_SERVICE_LINK);
 		clickToElement(driver, FooterContainerPageUI.CUSTOMER_SERVICE_LINK);
 		return PageGeneratorManager.getCustomerServicePage(driver);
 	}
+
 	@Step("Open Customer Service Page")
 	public ContactUsPageObject OpenContactUsPage() {
 		waitForElementClickable(driver, FooterContainerPageUI.CONTACT_US_LINK);

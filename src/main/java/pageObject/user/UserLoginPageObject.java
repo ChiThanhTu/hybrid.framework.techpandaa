@@ -53,6 +53,7 @@ public class UserLoginPageObject extends BasePage{
 		waitForElementVisible(driver, UserLoginPageUI.PASSWORD_INVALID_ERROR_MESSGE);
 		return getElelementText(driver, UserLoginPageUI.PASSWORD_INVALID_ERROR_MESSGE);
 	}
+	@Step("click To Create An Account Link {0}")
 	public CreateAnAccountPageObject clickToCreateAnAccountLink() {
 		waitForElementClickable(driver, UserLoginPageUI.CREATE_AN_ACCOUNT_LINK);
 		clickToElement(driver, UserLoginPageUI.CREATE_AN_ACCOUNT_LINK);

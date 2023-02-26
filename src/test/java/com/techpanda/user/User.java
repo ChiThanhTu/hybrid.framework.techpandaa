@@ -405,7 +405,7 @@ public class User extends BaseTest {
 		ExtentManager.getTest().log(Status.INFO, "TC_17 - Step 1: Click to Product Reviews Link");
 		myProductReviewPage = recurringProfilesPage.openMyProductReviewPage();
 		ExtentManager.getTest().log(Status.INFO, "TC_17 - Step Assert: Verify Message In Product Reviews");
-		verifyEquals(myProductReviewPage.getMessageInPruductReviews(), "You have submitted no reviews.");
+		verifyEquals(myProductReviewPage.getMessageInProductReviews(), "You have submitted no reviews.");
 	}
 
 	@Test

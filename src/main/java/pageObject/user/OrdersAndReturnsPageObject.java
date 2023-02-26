@@ -6,8 +6,9 @@ import pageObject.navigation.FooterContainerPageObject;
 
 public class OrdersAndReturnsPageObject extends FooterContainerPageObject {
 	WebDriver driver;
+
 	public OrdersAndReturnsPageObject(WebDriver driver) {
 		super(driver);
-		this.driver=driver;
+		this.driver = driver;
 	}
 }

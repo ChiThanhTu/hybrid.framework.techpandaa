@@ -7,11 +7,13 @@ import io.qameta.allure.Step;
 import pageObject.navigation.PageGeneratorManager;
 import pageUI.user.UserHomePageUI;
 
-public class UserHomePageObject extends BasePage{
+public class UserHomePageObject extends BasePage {
 	WebDriver driver;
-	public UserHomePageObject (WebDriver driver) {
-		this.driver=driver;
+
+	public UserHomePageObject(WebDriver driver) {
+		this.driver = driver;
 	}
+
 	@Step("Click To My Account Link {0}")
 	public UserLoginPageObject clickToMyAccountLink() {
 		waitForElementClickable(driver, UserHomePageUI.MY_ACCOUNT_LINK);
