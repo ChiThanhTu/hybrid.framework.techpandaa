@@ -38,7 +38,7 @@ public class PropertiesConfig {
 	 return properties;
  }
  //public static method
- public static PropertiesConfig getFileConfigReader() {
+ public static synchronized PropertiesConfig getFileConfigReader() {
 	 if(configLoader == null) {
 		 configLoader = new PropertiesConfig();
 	 }
